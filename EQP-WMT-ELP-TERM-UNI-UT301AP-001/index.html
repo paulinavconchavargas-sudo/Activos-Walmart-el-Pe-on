@@ -1,101 +1,202 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Termómetro láser UNI-T UT301A+</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      margin: 0;
-      padding: 20px;
-      color: #222;
-    }
-    .contenedor {
-      max-width: 850px;
-      margin: auto;
-      background: white;
-      border-radius: 12px;
-      padding: 24px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-    }
-    .logo {
-      width: 180px;
-      margin-bottom: 16px;
-    }
-    h1 {
-      font-size: 24px;
-      margin-bottom: 8px;
-      color: #062b49;
-    }
-    .dato {
-      margin: 8px 0;
-      font-size: 16px;
-    }
-    .etiqueta {
-      font-weight: bold;
-    }
-    .botones {
-      margin-top: 24px;
-      display: grid;
-      gap: 12px;
-    }
-    a.boton {
-      display: block;
-      text-decoration: none;
-      background: #0f5ea8;
-      color: white;
-      padding: 14px 16px;
-      border-radius: 8px;
-      text-align: center;
-      font-weight: bold;
-    }
-    a.boton:hover {
-      background: #0b4a85;
-    }
-    .nota {
-      margin-top: 24px;
-      font-size: 13px;
-      color: #666;
-    }
-  </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Termómetro UNI-T UT301A+</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 20px;
+}
+
+.contenedor {
+
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+
+}
+
+.encabezado {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.logo {
+
+    width: 180px;
+
+}
+
+.foto {
+
+    width: 180px;
+    max-height: 180px;
+    object-fit: contain;
+
+}
+
+h1 {
+
+    margin-top: 10px;
+    color: #1c2b39;
+
+}
+
+.grid {
+
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+
+}
+
+.tarjeta {
+
+    background: #f7f9fb;
+    border-radius: 12px;
+    padding: 14px;
+
+}
+
+.label {
+
+    font-size: 12px;
+    color: #7a8a9a;
+
+}
+
+.valor {
+
+    font-size: 16px;
+    font-weight: bold;
+    color: #24364a;
+
+}
+
+@media (max-width: 768px) {
+
+.encabezado {
+
+flex-direction: column;
+
+}
+
+.grid {
+
+grid-template-columns: 1fr;
+
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
-  <div class="contenedor">
 
-    <img src="../logo_equans.png" alt="Equans" class="logo">
+<div class="contenedor">
 
-    <h1>Termómetro láser UNI-T UT301A+</h1>
+<div class="encabezado">
 
-    <div class="dato"><span class="etiqueta">SKU:</span> EQP-WMT-ELP-TERM-UNI-UT301AP-001</div>
-    <div class="dato"><span class="etiqueta">Cliente:</span> Walmart</div>
-    <div class="dato"><span class="etiqueta">Sucursal:</span> El Peñón</div>
-    <div class="dato"><span class="etiqueta">Área:</span> Mantención</div>
-    <div class="dato"><span class="etiqueta">Ubicación:</span> Sala Técnica</div>
-    <div class="dato"><span class="etiqueta">Marca:</span> UNI-T</div>
-    <div class="dato"><span class="etiqueta">Modelo:</span> UT301A+</div>
-    <div class="dato"><span class="etiqueta">Serie:</span> PENDIENTE</div>
-    <div class="dato"><span class="etiqueta">Norma:</span> IEV60825-1</div>
-    <div class="dato"><span class="etiqueta">Estado:</span> ACTIVO</div>
-    <div class="dato"><span class="etiqueta">Responsable:</span> PENDIENTE</div>
+<div>
 
-    <div class="botones">
-      <a class="boton" href="https://1drv.ms/u/c/41efedd19f3c35c3/IQBCLdf8Hz5STqPHnMb2jVzgAVJo2kvKh7bTX8hMZpJ0TzA?e=ZvfKOG" target="_blank">Abrir carpeta del activo</a>
-      <a class="boton" href="https://1drv.ms/f/c/41efedd19f3c35c3/IgBuvabOBR7WQZR_7AEsfLg2AYJMwq-2L-T5p4v8lo6rEF4?e=7qNRo3" target="_blank">Ficha técnica</a>
-      <a class="boton" href="https://1drv.ms/f/c/41efedd19f3c35c3/IgAOIjzDjIWgR4AZIA-dMUpuAfeG-TqtROcb0mxpA4Qyl1I?e=G4aIjb" target="_blank">Manual usuario</a>
-      <a class="boton" href="https://1drv.ms/f/c/41efedd19f3c35c3/IgABQgzMRE8vR6BJXF4T2X4RARonPml2ZpZkxPdpMijWAiE?e=svv0by" target="_blank">Certificación</a>
-      <a class="boton" href="https://1drv.ms/f/c/41efedd19f3c35c3/IgBcUAAS5TAKQLuysIfgEvVvAWQbYTvRRoqcZokIlgjX7jM?e=d5js1j" target="_blank">Calibración</a>
-      <a class="boton" href="https://1drv.ms/f/c/41efedd19f3c35c3/IgDfOhMJJScmQJteLtIqUqZAAdJhfnHpTADOoLt6pwOFYRw?e=kYW69u" target="_blank">Mantenciones</a>
-      <a class="boton" href="https://1drv.ms/f/c/41efedd19f3c35c3/IgD1lOV9R6lFT6PqsrnsSrgOAUBrDRb3ShK65QCQ0rtz2FM?e=aADNIP" target="_blank">Revisiones</a>
-      <a class="boton" href="https://1drv.ms/f/c/41efedd19f3c35c3/IgArO6alDAI-SYQGCG_ix2HjAWc9OtW_QVWSiNQZ-dPbpOg?e=t4r8Ib" target="_blank">Fotos</a>
-    </div>
+<img src="../logo_equans.png" class="logo">
 
-    <div class="nota">
-      Página de trazabilidad documental del activo. Uso interno para control y auditoría.
-    </div>
+<h1>Termómetro UNI-T UT301A+</h1>
 
-  </div>
+</div>
+
+<div>
+
+<img src="Termometro.png" class="foto">
+
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="tarjeta">
+<div class="label">SKU</div>
+<div class="valor">EQP-WMT-ELP-TERM-UNI-UT301AP-001</div>
+</div>
+
+<div class="tarjeta">
+<div class="label">Cliente</div>
+<div class="valor">Walmart</div>
+</div>
+
+<div class="tarjeta">
+<div class="label">Sucursal</div>
+<div class="valor">El Peñón</div>
+</div>
+
+<div class="tarjeta">
+<div class="label">Área</div>
+<div class="valor">Mantención</div>
+</div>
+
+<div class="tarjeta">
+<div class="label">Ubicación</div>
+<div class="valor">Sala Técnica</div>
+</div>
+
+<div class="tarjeta">
+<div class="label">Tipo Activo</div>
+<div class="valor">TERMOMETRO_LASER</div>
+</div>
+
+<div class="tarjeta">
+<div class="label">Marca</div>
+<div class="valor">UNI-T</div>
+</div>
+
+<div class="tarjeta">
+<div class="label">Modelo</div>
+<div class="valor">UT301A+</div>
+</div>
+
+<div class="tarjeta">
+<div class="label">Número Serie</div>
+<div class="valor">SIN_SERIE</div>
+</div>
+
+<div class="tarjeta">
+<div class="label">Norma</div>
+<div class="valor">IEV60825-1</div>
+</div>
+
+<div class="tarjeta">
+<div class="label">Estado</div>
+<div class="valor">ACTIVO</div>
+</div>
+
+<div class="tarjeta">
+<div class="label">Responsable</div>
+<div class="valor">PENDIENTE</div>
+</div>
+
+</div>
+
+</div>
+
 </body>
+
 </html>
