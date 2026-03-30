@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Multitester UNI-T UT202</title>
+<title>Multitester UNI-T UT202+</title>
 
 <style>
-
 body {
     font-family: Arial, sans-serif;
     background: #f4f6f8;
@@ -17,90 +13,69 @@ body {
 }
 
 .contenedor {
-
     max-width: 1000px;
     margin: auto;
     background: white;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-
 }
 
 .encabezado {
-
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
+    gap: 20px;
 }
 
 .logo {
-
     width: 180px;
-
 }
 
 .foto {
-
     width: 180px;
     max-height: 180px;
     object-fit: contain;
-
+    border-radius: 10px;
+    background: #fff;
 }
 
 h1 {
-
     margin-top: 10px;
     color: #1c2b39;
-
 }
 
 .grid {
-
     margin-top: 20px;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 14px;
-
 }
 
 .tarjeta {
-
     background: #f7f9fb;
     border-radius: 12px;
     padding: 14px;
-
 }
 
 .label {
-
     font-size: 12px;
     color: #7a8a9a;
-
 }
 
 .valor {
-
     font-size: 16px;
     font-weight: bold;
     color: #24364a;
-
 }
 
-/* BOTONES */
-
 .botones {
-
     margin-top: 25px;
     display: grid;
     gap: 12px;
-
 }
 
 .boton {
-
     background: #0f5ea8;
     color: white;
     padding: 14px;
@@ -109,163 +84,61 @@ h1 {
     text-align: center;
     font-weight: bold;
     display: block;
-
 }
 
 .boton:hover {
-
     background: #0b4a85;
-
 }
 
 @media (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.encabezado {
-
-flex-direction: column;
-
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
-
-.grid {
-
-grid-template-columns: 1fr;
-
-}
-
-}
-
 </style>
-
 </head>
 
 <body>
-
 <div class="contenedor">
 
-<div class="encabezado">
+    <div class="encabezado">
+        <div>
+            <img src="../logo_equans.png" class="logo" alt="Logo Equans">
+            <h1>Multitester UNI-T UT202+</h1>
+        </div>
+        <div><img src="Multi Tester.png" class="foto" alt="Foto del activo"></div>
+    </div>
 
-<div>
+    <div class="grid">
+        <div class="tarjeta"><div class="label">SKU</div><div class="valor">EQP-WMT-ELP-MULT-UNI-UT202P-001</div></div>
+        <div class="tarjeta"><div class="label">Cliente</div><div class="valor">Walmart</div></div>
+        <div class="tarjeta"><div class="label">Sucursal</div><div class="valor">El Peñón</div></div>
 
-<img src="../logo_equans.png" class="logo">
+        <div class="tarjeta"><div class="label">Área</div><div class="valor">Mantención</div></div>
+        <div class="tarjeta"><div class="label">Ubicación</div><div class="valor">Sala Eléctrica</div></div>
+        <div class="tarjeta"><div class="label">Tipo Activo</div><div class="valor">MULTITESTER</div></div>
 
-<h1>Multitester UNI-T UT202</h1>
+        <div class="tarjeta"><div class="label">Marca</div><div class="valor">UNI-T</div></div>
+        <div class="tarjeta"><div class="label">Modelo</div><div class="valor">UT202+</div></div>
+        <div class="tarjeta"><div class="label">Número Serie</div><div class="valor">PENDIENTE</div></div>
 
-</div>
+        <div class="tarjeta"><div class="label">Norma</div><div class="valor">IEC61010-1</div></div>
+        <div class="tarjeta"><div class="label">Estado</div><div class="valor">ACTIVO</div></div>
+        <div class="tarjeta"><div class="label">Responsable</div><div class="valor">PENDIENTE</div></div>
+    </div>
 
-<div>
-
-<img src="Multitester.png" class="foto">
-
-</div>
-
-</div>
-
-<div class="grid">
-
-<div class="tarjeta">
-<div class="label">SKU</div>
-<div class="valor">EQP-WMT-ELP-MULT-UNI-UT202-001</div>
-</div>
-
-<div class="tarjeta">
-<div class="label">Cliente</div>
-<div class="valor">Walmart</div>
-</div>
-
-<div class="tarjeta">
-<div class="label">Sucursal</div>
-<div class="valor">El Peñón</div>
-</div>
-
-<div class="tarjeta">
-<div class="label">Área</div>
-<div class="valor">Mantención</div>
-</div>
-
-<div class="tarjeta">
-<div class="label">Ubicación</div>
-<div class="valor">Sala Técnica</div>
-</div>
-
-<div class="tarjeta">
-<div class="label">Tipo Activo</div>
-<div class="valor">MULTITESTER</div>
-</div>
-
-<div class="tarjeta">
-<div class="label">Marca</div>
-<div class="valor">UNI-T</div>
-</div>
-
-<div class="tarjeta">
-<div class="label">Modelo</div>
-<div class="valor">UT202</div>
-</div>
-
-<div class="tarjeta">
-<div class="label">Número Serie</div>
-<div class="valor">SIN_SERIE</div>
-</div>
-
-<div class="tarjeta">
-<div class="label">Norma</div>
-<div class="valor">NO_INDICADA</div>
-</div>
-
-<div class="tarjeta">
-<div class="label">Estado</div>
-<div class="valor">ACTIVO</div>
-</div>
-
-<div class="tarjeta">
-<div class="label">Responsable</div>
-<div class="valor">PENDIENTE</div>
-</div>
+    <div class="botones">
+        <a class="boton" href="https://paulinavconchavargas-sudo.github.io/Activos-Walmart-el-Pe-on/EQP-WMT-ELP-MULT-UNI-UT202P-001/" target="_blank">Ficha técnica</a>
+        <a class="boton" href="https://1drv.ms/f/c/41efedd19f3c35c3/IgBvI0s4F5p7Q6_5WeE1KZYVAbjR5dtWvjqCQWQOkslx8ds?e=l4Odv0" target="_blank">Certificación</a>
+        <a class="boton" href="https://1drv.ms/f/c/41efedd19f3c35c3/IgAc9xAAV8JrRInjmGKoKkP0AaBsoZfxTfcdhY7gHWb0PM0?e=fzDs7e" target="_blank">Calibración</a>
+        <a class="boton" href="https://1drv.ms/f/c/41efedd19f3c35c3/IgAZAcyRycCnQJ6bkKbVeCR1ARx-MXHQLD0PIhaYlInz9s4?e=n1JaX4" target="_blank">Fotos</a>
+    </div>
 
 </div>
-
-<!-- BOTONES -->
-
-<div class="botones">
-
-<a class="boton" 
-href="https://paulinavconchavargas-sudo.github.io/Activos-Walmart-el-Pe-on/EQP-WMT-ELP-MULT-UNI-UT202-001/Ficha_Tecnica_Multitester.pdf" 
-target="_blank">
-
-Ficha técnica
-
-</a>
-
-<a class="boton" 
-href="https://paulinavconchavargas-sudo.github.io/Activos-Walmart-el-Pe-on/EQP-WMT-ELP-MULT-UNI-UT202-001/Certificado_Multitester.pdf" 
-target="_blank">
-
-Certificación
-
-</a>
-
-<a class="boton" 
-href="https://paulinavconchavargas-sudo.github.io/Activos-Walmart-el-Pe-on/EQP-WMT-ELP-MULT-UNI-UT202-001/Calibracion_Multitester.pdf" 
-target="_blank">
-
-Calibración
-
-</a>
-
-<!-- CAMBIO REAL -->
-
-<a class="boton" 
-href="Multitester.png" 
-target="_blank">
-
-Fotos
-
-</a>
-
-</div>
-
-</div>
-
 </body>
-
 </html>
